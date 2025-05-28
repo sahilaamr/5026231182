@@ -1,0 +1,100 @@
+/* Base colors */
+:root {
+    --primary-color: #38a169; /* Green */
+    --secondary-color: #f7fafc; /* Light Gray */
+    --dark-color: #1a202c; /* Dark Gray */
+    --white-color: #ffffff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 1rem;
+    text-align: center;
+    color: var(--white-color);
+  }
+  
+  .cta-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #2f855a; /* Darker Green */
+  }
+  
+  /* Tentang Section */
+  .tentang-section {
+    background-color: var(--white-color);
+    padding: 4rem 1rem;
+  }
+  
+  .tentang-section h3 {
+    color: var(--dark-color);
+  }
+  
+  /* Produk Section */
+  .produk-section {
+    background-color: var(--secondary-color);
+    padding: 4rem 1rem;
+  }
+  
+  .product-card {
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    border-radius: 0.75rem;
+  }
+  
+  /* Kontak Section */
+  .kontak-section {
+    background-color: var(--white-color);
+    padding: 4rem 1rem;
+  }
+  
+  .input-field {
+    width: 100%;
+    border: 1px solid #d2d6dc;
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+  
+  .submit-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #2f855a; /* Darker Green */
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  

@@ -1,0 +1,106 @@
+---
+title: "prak"
+output: html_document
+date: "2024-05-30"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+library(openintro)
+```
+```{r}
+data(ames)
+ames
+```
+```{r sample, eval=FALSE}
+population <- ames$area
+samp <- sample(population,60)
+samp
+```
+```{r sample-mean, eval=FALSE}
+sample_mean <- mean(samp)
+sample_mean
+```
+```{r ci, eval=FALSE}
+se <- sd(population) / sqrt(60)
+se
+```
+```{r}
+lower <- sample_mean - 1.95 * se
+upper <- sample_mean + 1.96 * se
+c(lower,upper)
+```
+```{r}
+confdat <- read.csv('survey_starbucks_customer_survey.csv')
+confdat
+```
+```{r}
+library(dplyr)
+cat1<-select(confdat, priceRate, promoRate)
+cat2<-select(confdat, serviceRate, wifiRate, ambianceRate)
+cat1
+```
+#Menghitung mean tiap kategori
+```{r}
+meancat1 <- mean(colMeans(cat1))
+meancat1
+```
+#Menghitung standar deviasi tiap kategori
+```{r}
+sd_cat1 <- sd(unlist(cat1))
+sd_cat1
+```
+#Menghitung confidence interval (95%)
+```{r}
+ci_norm = function(meancat1, sd_cat1, n, type = "z"){
+  if(type == "z"){
+    ci_upper = meancat1+(1.96*sd_cat1 /sqrt(n))
+    ci_lower = meancat1-(1.96*sd_cat1 /sqrt(n))
+  }else{
+    ci_upper = meancat1+(qt(0.975, n-1)*sd_cat1 /sqrt(n))
+    ci_lower = meancat1-(qt(0.975, n-1)*sd_cat1 /sqrt(n))
+  }
+  res = cbind(ci_lower,ci_upper)
+  res
+}
+```
+
+```{r}
+coba = ci_norm(meancat1, sd_cat1, 20, type = "t")
+coba
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

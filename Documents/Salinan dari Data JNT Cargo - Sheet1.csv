@@ -1,0 +1,17 @@
+KARYAWAN,,,,,PAKET,,,,,,,,,KURIR,,,,,PENERIMA,,,
+ID Karyawan,No telphone,Nama,ID Cabang,,Dimensi,Berat,Alamat,Jenis,ID Paket,ID Pengirim,ID Penerima,Keluhan,,Nama,No telphone,ID Kurir,ID Paket,,ID Penerima,Alamat,No telphone,Nama
+1001,87694327697,johan ,4021,,30 cm x 20 cm x 10 cm,2.2 kg,"Jl. Sudirman No. 15, Kelurahan Cikini, Kecamatan Menteng, Kota Jakarta Pusat, Provinsi DKI Jakarta",Buku,JNT0011223344,5021,1005,Tidak ada,,Hasan Abdilah,84567891234,JNTKUR001,JNT0011223344,,1005,"Jl.Tidar No. 40, Kelurahan Tidar, Kecamatan Kedungkandang, Kota Malang, Provinsi Jawa Timur",87987654321,Siti Rahmawati
+1002,87654321098,Jane Smith,4122,,40 cm x 30 cm x 20 cm,4 kg,"Jl. Mulyosari No. 10, Kelurahan Sukolilo, Kecamatan Sukolilo, Kota Surabaya, Provinsi Jawa Timur",Elektronik,JNT1122334455,5022,1006,"Kemasan rusak, ditemukan retakan pada casing",,Yus Muhammad,82345678912,JNTKUR007,JNT1122334455,,1006,"Jl. Rawa Indah No. 25, Kelurahan Cibubur, Kecamatan Ciracas, Kota Jakarta Timur, Provinsi DKI Jakarta",87876543219,Joko Susanto
+1003,89876543210,Ahmad Abdullah,4323,,50 cm x 40 cm x 30 cm,6 kg,"Jl.Tidar No. 40, Kelurahan Tidar, Kecamatan Kedungkandang, Kota Malang, Provinsi Jawa Timur",Pakaian,JNT2233445566,5023,1007,Salah satu item pakaian ukurannya tidak sesuai,,Supriyadi,83456789123,KURIR003,JNT2233445566,,1007,"Jl. Melati No. 15, Kelurahan Cikarang, Kecamatan Cikarang Pusat, Kota Bekasi, Provinsi Jawa Barat",87765432198,Rini Setiawan
+1004,85432109876,Maria Garcia,4424,,35 cm x 25 cm x 15 cm,2.5 kg,"Jl. Bunga Raya No. 40, Kelurahan Sidoarjo, Kecamatan Sidoarjo, Kota Sidoarjo, Provinsi Jawa Timur",Barang Pecah Belah,JNT3344556677,5024,1008,Pecah pada salah satu gelas,,Fikri,84567891234,KURIR009,JNT3344556677,,1008,"Jl. Asem No. 36, Kelurahan Asemrowo, Kecamatan Asemrowo, Kota Surabaya, Provinsi Jawa Timur",87543219876,Nia Fitriani
+1005,81987654321,David martim,4225,,60 cm x 50 cm x 40 cm,8.5 kg,"Jl. Melati No. 15, Kelurahan Cikarang, Kecamatan Cikarang Pusat, Kota Bekasi, Provinsi Jawa Barat",Mainan Anak,JNT4455667788,5026,1009,"Kemasan terbuka saat tiba, tapi isi paket tidak rusak",,Eko Santoso,85678912345,JNTKUR004,JNT4455667788,,1009,"Jl. Mulyosari No. 10, Kelurahan Sukolilo, Kecamatan Sukolilo, Kota Surabaya, Provinsi Jawa Timur",87965432665,Adi Nugroho
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+CABANG,,,,,PENGIRIMAN,,,,,,PENGIRIM,,,,,,,,,,,
+ID Kota,Alamat Cabang,Nama Cabang,ID Cabang,,ID Paket,Tanggal Pengiriman,Tanggal di Terima,Status Pengiriman,ID Karyawan,,ID Pengirim,Nomor Telepon,Alamat,Nama,ID Kurir,,,,,,,
+6011,"Jl Tegalsari, Wiyung",JNT Cargo Surabaya Pusat - Rungkut,4021,,JNT0011223344,4/3/2003,7/3/2023,Di kemas,1001,,5021,87861218232,Gersik,Glosary.shop,JNTKUR001,,,,,,,
+6112,"Jl.Soedirman,Kediri",J&T Cargo Kenjeran 321 A & Wahana,4122,,JNT1122334455,12/5/2023,16-05-2023,Dalam Perjalanan,1002,,5022,87789878576,Tangerang,jatskey,JNTKUR007,,,,,,,
+6113,"Jl.Arief Rahman, Surabya",JNT Cargo Jakarta Utara - Koja,4323,,JNT2233445566,7/8/2023,11/8/2023,Di Serahkan ke kurir,1003,,5023,81567843567,Jakarta Selatan,Mcglow,KURIR003,,,,,,,
+6214,"Jl.Cor Bebek, Tandes",JNT Cargo Jakarta Selatan - Ciganjur,4424,,JNT3344556677,10/7/2023,15-07-2023,Proses Pengiriman,1004,,5024,84567382098,Sidoarjo,Pernak.pernik.shop,KURIR009,,,,,,,
+6315,"JL.Atmaja, Lamongan",JNT Cargo Surabaya Bubutan,4225,,JNT4455667788,13-03-2023,16-03-2023,Menunggu di gudang,1005,,5026,86573429670,Sueabaya,Maju jaya,JNTKUR004,,,,,,,

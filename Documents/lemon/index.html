@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lemonilo - Hidup Sehat Dimulai Dari Sini</title>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <img src="Lemonilologo.png" alt="Lemonilo Logo" class="h-10">
+      <nav class="space-x-6">
+        <a href="#home" class="hover:underline">Beranda</a>
+        <a href="#tentang" class="hover:underline">Tentang</a>
+        <a href="#produk" class="hover:underline">Produk</a>
+        <a href="#kontak" class="hover:underline">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10">
+        <h1 class="text-5xl font-bold mb-4 leading-snug max-w-3xl mx-auto">
+            Menuju Generasi Hebat <br />
+            Indonesia bersama Lemonilo
+          </h1>          
+      <a href="#produk" class="cta-button">Lihat Produk</a>
+    </div>
+  </section>
+  
+
+  <!-- Tentang Kami -->
+  <section id="tentang" class="tentang-section">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-4">Tentang Lemonilo</h3>
+      <p>Lemonilo adalah brand gaya hidup sehat yang menyediakan produk makanan & kebutuhan sehari-hari bebas bahan berbahaya. Kami percaya setiap orang berhak hidup sehat tanpa mahal dan ribet.</p>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section id="produk" class="produk-section">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-10">Produk Kami</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="product-card">
+          <img src="mie.jpeg" alt="Mie Lemonilo" class="mb-4 w-full h-48 object-cover rounded-md">
+          <h4 class="font-bold">Mie Instan Sehat</h4>
+          <p>Mie tanpa pengawet & pewarna, tetap enak dan gurih.</p>
+        </div>
+        <div class="product-card">
+          <img src="camilan.jpeg" alt="Snack Lemonilo" class="mb-4 w-full h-48 object-cover rounded-md">
+          <h4 class="font-bold">Camilan Sehat</h4>
+          <p>Cemilan ringan dan sehat untuk keluarga di rumah.</p>
+        </div>
+        <div class="product-card">
+          <img src="bumbu.jpeg" alt="Bumbu Lemonilo" class="mb-4 w-full h-48 object-cover rounded-md">
+          <h4 class="font-bold">Bumbu Masak</h4>
+          <p>Memasak sehat dan cepat tanpa bahan tambahan berbahaya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="kontak-section">
+    <div class="max-w-xl mx-auto">
+      <h3 class="text-3xl font-semibold text-center mb-6">Hubungi Kami</h3>
+      <form id="contactForm" class="space-y-4">
+        <input type="text" id="name" placeholder="Nama" class="input-field" required>
+        <input type="email" id="email" placeholder="Email" class="input-field" required>
+        <textarea id="message" placeholder="Pesan" rows="5" class="input-field" required></textarea>
+        <button type="submit" class="submit-button">Kirim</button>
+      </form>
+      <p id="successMessage" class="text-green-600 mt-4 hidden">Pesan berhasil dikirim!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Lemonilo. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
