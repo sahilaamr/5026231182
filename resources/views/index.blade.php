@@ -4,13 +4,14 @@
  
 	<h3>Data Pegawai</h3>
  
-	<a href="/pegawai/tambah" class= "btn btn-primary"> + Tambah Pegawai Baru</a>
+	<a href="/pegawai/tambah" class="btn" style="background-color: rgb(246, 226, 231); color:white"> + Tambah Pegawai Baru</a>
+    <br/><br/>
 	
 	<p>Cari Data Pegawai :</p>
-	<form action="/pegawai/cari" method="GET">
-		<input type="text" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari') }}">
-		<input type="submit" value="CARI" class="btn btn-info">
-	</form>
+	<form class="form-inline" action="/pegawai/cari" method="GET">More actions
+    <input type="text" class="form-control mr-2 mb-2" name="cari" placeholder="Cari Pegawai ..">
+    <button type="submit" class="btn btn-info mb-2">CARI</button>
+    </form>
 	<br/>
  
 	<table class="table table-stripped table-hover">

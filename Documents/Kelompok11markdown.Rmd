@@ -1,5 +1,0 @@
-```{r}
-dat <- read.csv('Kelompok_11_STAT_Kuisioner_Kepuasan_Mahasiswa_ITS_terhadap_Warung_Makan_Sekitar_ITS_xlsx_Sheet1_1_.csv')
-dat
-```
-

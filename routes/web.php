@@ -5,8 +5,21 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\ACController;
 
-//kalo di java Route.get()
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+// system.out.println();
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -23,27 +36,12 @@ Route::get('blog', function () {
 	return view('blog');
 });
 
-Route::get('hello',[Coba::class, 'helloworld']);
+Route::get('hello', [Coba::class, 'helloworld']);
+//Route::get('hello',App\Http\Controllers\Coba::helloworld);
 
-Route::get('linktree', function () {
-	return view('tugas-linktree-todolvr');
-});
-
-Route::get('pertama', function () {
-	return view('pertama');
-});
-
+//Link Tugas Week 11 (kumpulan tugas pertemuan 1-ETS)
 Route::get('frontend', function () {
 	return view('frontend');
-});
-
-//kumpulan link
-Route::get('frontend', function () {
-	return view('frontend');
-});
-
-Route::get('pertama', function () {
-	return view('pertama');
 });
 
 Route::get('bootstrap1', function () {
@@ -54,45 +52,60 @@ Route::get('bootstrap2', function () {
 	return view('bootstrap2');
 });
 
-Route::get('homepage-teknisi', function () {
-	return view('homepage_teknisi');
-});
-
-Route::get('linktree', function () {
-	return view('tugas-linktree-todolvr');
-});
-
 Route::get('js1', function () {
 	return view('js1');
 });
 
-Route::get('js1', function () {
+Route::get('js2', function () {
 	return view('js2');
 });
 
+Route::get('kode6', function () {
+	return view('kode6');
+});
+
+Route::get('linktree', function () {
+	return view('linktree');
+});
+
+Route::get('shop', function () {
+	return view('shop');
+});
+
+Route::get('pertama', function () {
+	return view('pertama');
+});
 
 Route::get('ets', function () {
 	return view('ets');
 });
 
-Route::get('dosen', [Coba::class,  'index']);
+Route::get('dosen', [Coba::class, 'index']);
 
 //Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
 
-Route::get('/formulir', [PegawaiController::class, 'formulir']); //halaman isian
+Route::get('/formulir', [PegawaiController::class, 'formulir']); //halaman isian formulir
 Route::post('/formulir/proses', [PegawaiController::class, 'proses']); //action form
 
-//route blog
+// route blog
 Route::get('/blog', [BlogController::class, 'home']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
-//crud pegawai
-Route::get('/pegawai', [PegawaiDBController::class, 'index']);
-Route::get('/pegawai/tambah', [PegawaiDBController::class, 'tambah']);
-Route::post('/pegawai/store',[PegawaiDBController::class, 'store']);
-Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
-Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
-Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
-Route::get('/pegawai', [PegawaiDBController::class, 'index']);
-Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+// crud pegawai
+Route::get('/pegawai', [PegawaiDBController::class,'index']);
+Route::get('/pegawai/tambah', [PegawaiDBController::class,'tambah']);
+Route::post('/pegawai/store', [PegawaiDBController::class,'store']);
+Route::get('/pegawai/edit/{id}', [PegawaiDBController::class,'edit']);
+Route::post('/pegawai/update', [PegawaiDBController::class,'update']);
+Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class,'hapus']);
+Route::get('/pegawai/cari',[PegawaiDBController::class,'cari']);
+
+// crud AC
+Route::get('/AC', [ACController::class,'index2']);
+Route::get('/AC/tambah', [ACController::class,'tambah2']);
+Route::post('/AC/store', [ACController::class,'store']);
+Route::get('/AC/edit/{id}', [ACController::class,'edit2']);
+Route::post('/AC/update', [ACController::class,'update']);
+Route::get('/AC/hapus/{id}',[ACController::class,'hapus']);
+Route::get('/AC/cari',[ACController::class,'cari']);
