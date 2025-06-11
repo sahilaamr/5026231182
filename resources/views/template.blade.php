@@ -13,7 +13,7 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style>
         .jumbotron {
-            background-color:rgb(246, 226, 231);
+            background-color:rgb(244, 193, 206);
             height: 100px;
             margin-bottom: 0;
             border-radius: 0;
@@ -41,8 +41,8 @@
             border-color:rgb(255, 255, 255); /* Warna border sesuai skema warna */
         }
         .form-inline .btn-info {
-            background-color:rgb(246, 226, 231); /* Warna tombol sesuai skema */
-            border-color: rgb(246, 226, 231);
+            background-color:rgb(244, 193, 206); /* Warna tombol sesuai skema */
+            border-color: rgb(244, 193, 206);
             color: rgb(250, 250, 250); /* Warna teks tombol */
             border-radius: 10px;
         }
@@ -61,8 +61,8 @@
     }
 
     .page-item.active .page-link {
-        background-color: rgb(246, 226, 231); /* Hot Pink - Warna latar belakang untuk halaman aktif */
-        border-color: rgb(246, 226, 231); /* Border warna yang sama dengan background */
+        background-color: rgb(244, 193, 206); /* Hot Pink - Warna latar belakang untuk halaman aktif */
+        border-color: rgb(244, 193, 206); /* Border warna yang sama dengan background */
         color: white !important; /* Warna teks putih untuk halaman aktif */
     }
 
@@ -74,7 +74,7 @@
 
     .page-item .page-link:hover {
         background-color:rgb(247, 236, 235); /* Warna hover (pink sangat muda) */
-        border-color: rgb(246, 226, 231); /* Border saat hover */
+        border-color: rgb(244, 193, 206); /* Border saat hover */
         color: #CD5C5C; /* Warna teks saat hover */
     }
 
@@ -113,7 +113,7 @@
                 <a class="nav-link" href="#">EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 1</a>
+                <a class="nav-link" href="keranjang_belanja">Latihan 1</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Latihan 2</a>

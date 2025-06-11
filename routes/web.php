@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\ACController;
+use App\Http\Controllers\KeranjangBelanjaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -109,3 +110,10 @@ Route::get('/AC/edit/{id}', [ACController::class,'edit2']);
 Route::post('/AC/update', [ACController::class,'update']);
 Route::get('/AC/hapus/{id}',[ACController::class,'hapus']);
 Route::get('/AC/cari',[ACController::class,'cari']);
+
+// crud keranjang_belanja
+Route::get('/keranjang_belanja', [KeranjangBelanjaController::class,'index3']);
+Route::get('/keranjang_belanja/beli', [KeranjangBelanjaController::class,'beli']);
+Route::post('/keranjang_belanja/store', [KeranjangBelanjaController::class,'store']);
+Route::post('/keranjang_belanja/update', [KeranjangBelanjaController::class,'update']);
+Route::get('/keranjang_belanja/batal/{id}',[KeranjangBelanjaController::class,'batal']);

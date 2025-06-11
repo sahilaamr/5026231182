@@ -3,7 +3,7 @@
 
 	<h3>Data AC</h3>
 
-	<a href="/AC/tambah" class="btn" style="background-color: rgb(246, 226, 231); color:white"> + Tambah AC Baru</a>
+	<a href="/AC/tambah" class="btn" style="background-color: rgb(244, 193, 206); color:white"> + Tambah AC Baru</a>
     <br/><br/>
 
 	<p>Cari Data AC :</p>
@@ -26,7 +26,7 @@
 			<td>{{ $p->merkAC }}</td>
 			<td>Rp {{ number_format($p->hargaAC, 0, ',', '.') }}</td>
 			<td>{{ $p->tersedia ? 'Tersedia' : 'Tidak Tersedia' }}</td>
-			<td>{{ $p->berat }}</td>
+			<td>{{ $p->berat }} kg </td>
 			<td>
 				<a href="/AC/edit/{{ $p->ID }}" class="btn btn-success">Edit</a>
 				|

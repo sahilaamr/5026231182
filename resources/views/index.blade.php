@@ -4,7 +4,7 @@
  
 	<h3>Data Pegawai</h3>
  
-	<a href="/pegawai/tambah" class="btn" style="background-color: rgb(246, 226, 231); color:white"> + Tambah Pegawai Baru</a>
+	<a href="/pegawai/tambah" class="btn" style="background-color: rgb(244, 193, 206); color:white"> + Tambah Pegawai Baru</a>
     <br/><br/>
 	
 	<p>Cari Data Pegawai :</p>

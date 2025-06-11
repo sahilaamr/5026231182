@@ -2,7 +2,7 @@
 @section('content')
     <h3>Data AC</h3>
 
-    <a href="/AC" class="btn" style="background-color: rgb(246, 226, 231); color:white; border-radius: 10px"> Kembali</a>
+    <a href="/AC" class="btn" style="background-color: rgb(244, 193, 206); color:white; border-radius: 10px"> Kembali</a>
 
     <br />
     <br />
@@ -49,6 +49,6 @@
             </div>
         </div>
 
-        <input type="submit" value="Simpan Data" class="btn" style="background-color: rgb(246, 226, 231); color: rgb(255, 255, 255); border-color: rgb(246, 226, 231); border-radius: 10px">
+        <input type="submit" value="Simpan Data" class="btn" style="background-color: rgb(244, 193, 206); color: rgb(255, 255, 255); border-color: rgb(244, 193, 206); border-radius: 10px">
     </form>
 @endsection

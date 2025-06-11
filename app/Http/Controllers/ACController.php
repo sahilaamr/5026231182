@@ -60,7 +60,7 @@ class ACController extends Controller
     public function edit2($id) // ada primary key
     {
         // mengambil data AC berdasarkan id yang dipilih
-        $AC = DB::table('AC')->where('AC_ID',$id)->get();
+        $AC = DB::table('AC')->where('ID',$id)->get();
         // passing data AC yang didapat ke view edit.blade.php
         return view('edit2',['AC' => $AC]);
 
@@ -88,7 +88,7 @@ class ACController extends Controller
     public function hapus($id)
     {
         // menghapus data AC berdasarkan id yang dipilih
-        DB::table('AC')->where('AC_ID',$id)->delete();
+        DB::table('AC')->where('ID',$id)->delete();
 
         // alihkan halaman ke halaman AC
         return redirect('/AC');
@@ -103,7 +103,7 @@ class ACController extends Controller
     		// mengambil data dari table AC sesuai pencarian data
 		$AC = DB::table('AC')
 		->where('merk_AC','like',"%".$cari."%")
-		->paginate();
+		->paginate(10);
 
     		// mengirim data AC ke view index2
 		return view('index2',['AC' => $AC]);
