@@ -113,13 +113,13 @@
                 <a class="nav-link" href="#">EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="keranjang_belanja">Latihan 1</a>
+                <a class="nav-link" href="/keranjang_belanja">Latihan 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 2</a>
+                <a class="nav-link" href="/SoalA1">Latihan 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 3</a>
+                <a class="nav-link" href="/karyawan">Latihan 3</a>
             </li>
         </ul>
     </nav>

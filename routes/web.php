@@ -7,6 +7,9 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\ACController;
 use App\Http\Controllers\KeranjangBelanjaController;
+use App\Http\Controllers\SoalA1Controller;
+use App\Http\Controllers\KaryawanController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -117,3 +120,14 @@ Route::get('/keranjang_belanja/beli', [KeranjangBelanjaController::class,'beli']
 Route::post('/keranjang_belanja/store', [KeranjangBelanjaController::class,'store']);
 Route::post('/keranjang_belanja/update', [KeranjangBelanjaController::class,'update']);
 Route::get('/keranjang_belanja/batal/{id}',[KeranjangBelanjaController::class,'batal']);
+
+// crud latihanA1
+Route::get('/SoalA1', [SoalA1Controller::class,'index4']);
+
+// crud karyawan
+Route::get('/karyawan', [KaryawanController::class,'index5']);
+Route::get('/karyawan/tambah', [KaryawanController::class,'tambah3']);
+Route::post('/karyawan/store', [KaryawanController::class,'store']);
+Route::post('/karyawan/update', [KaryawanController::class,'update']);
+Route::get('/karyawan/hapus/{id}',[KaryawanController::class,'hapus']);
+Route::get('/karyawan/cari',[KaryawanController::class,'cari']);
