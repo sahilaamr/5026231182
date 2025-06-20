@@ -35,6 +35,5 @@
 		</tr>
 		@endforeach
 	</table>
-    {{ $AC->links()}}
 
 @endsection

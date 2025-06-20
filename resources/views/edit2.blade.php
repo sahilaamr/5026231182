@@ -10,21 +10,17 @@
 
 	<a href="/AC"> Kembali</a>
 
-	<br/>
-	<br/>
+	<br/><br/>
 
-	@foreach($AC as $p)
-	<form action="/AC/update" method="post">
+	<form action="/AC/update/{{ $data->ID }}" method="post">
 		{{ csrf_field() }}
-		<input type="hidden" name="id" value="{{ $p->ID }}"> <br/>
-		Merk <input type="text" required="required" name="merk" value="{{ $p->merkAC }}"> <br/>
-		Harga <input type="number" required="required" name="harga" value="{{ $p->hargaAC }}"> <br/>
-		Tersedia <input type="checkbox" name="tersedia" value="{{ $p->tersedia }}"> <br/>
-		Berat <input type="number" step="any" required="required" name="berat" value="{{ $p->berat }}"> <br/>
+		<input type="hidden" name="ID" value="{{ $data->ID }}"> <br/>
+		Merk <input type="text" required="required" name="merk" value="{{ $data->merkAC }}"> <br/>
+		Harga <input type="number" required="required" name="harga" value="{{ $data->hargaAC }}"> <br/>
+		Tersedia <input type="checkbox" name="tersedia" {{ $data->tersedia ? 'checked' : '' }}> <br/>
+		Berat <input type="number" step="any" required="required" name="berat" value="{{ $data->berat }}"> <br/>
 		<input type="submit" value="Simpan Data">
 	</form>
-	@endforeach
-
 
 </body>
 </html>

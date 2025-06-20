@@ -106,13 +106,13 @@ Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class,'hapus']);
 Route::get('/pegawai/cari',[PegawaiDBController::class,'cari']);
 
 // crud AC
-Route::get('/AC', [ACController::class,'index2']);
-Route::get('/AC/tambah', [ACController::class,'tambah2']);
-Route::post('/AC/store', [ACController::class,'store']);
-Route::get('/AC/edit/{id}', [ACController::class,'edit2']);
-Route::post('/AC/update', [ACController::class,'update']);
-Route::get('/AC/hapus/{id}',[ACController::class,'hapus']);
-Route::get('/AC/cari',[ACController::class,'cari']);
+Route::get('/AC', [ACController::class, 'index2']);
+Route::get('/AC/tambah', [ACController::class, 'tambah2']);
+Route::post('/AC/store', [ACController::class, 'store']);
+Route::get('/AC/edit/{id}', [ACController::class, 'edit2']);
+Route::post('/AC/update/{id}', [ACController::class, 'update']); 
+Route::get('/AC/delete/{id}', [ACController::class, 'hapus']);
+Route::get('/AC/cari', [ACController::class, 'cari']);
 
 // crud keranjang_belanja
 Route::get('/keranjang_belanja', [KeranjangBelanjaController::class,'index3']);
@@ -131,3 +131,4 @@ Route::post('/karyawan/store', [KaryawanController::class,'store']);
 Route::post('/karyawan/update', [KaryawanController::class,'update']);
 Route::get('/karyawan/hapus/{id}',[KaryawanController::class,'hapus']);
 Route::get('/karyawan/cari',[KaryawanController::class,'cari']);
+
